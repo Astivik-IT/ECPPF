@@ -1,0 +1,198 @@
+body {
+    background-color: #003CA6;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+#soporte-container, #separator-container{
+    background-color: #003CA6;
+}
+
+#logo-container{
+    background-color: #ffffff;
+}
+
+#img-logo{
+    width: 40%
+}
+
+.tabs-title {
+    display: inline-block;
+    float: none;
+}
+
+.menu-container {
+    padding: 0;
+    margin: 0;
+}
+
+.tabs,
+.tabs .tabs-title {
+    background-color: #003CA6;
+}
+
+.menu {
+    background-color: #003CA6;
+    color: white;
+    font-size: 20px;
+}
+
+.menu a {
+    color: white;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    color: #003CA6;
+    background-color: white;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.menu-container .tabs .tabs-title a {
+    font-size: 20px;
+    color: white;
+}
+
+.tabs-content {
+    padding: 0;
+}
+
+.tabs-panel {
+    padding: 0;
+}
+
+.menu-container .tabs .tabs-title.is-active a {
+    background-color: #003CA6;
+    border-radius: 8px;
+}
+
+.menu-container .tabs .tabs-title a:hover {
+    color: #003CA6;
+    background-color: white;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#entidades-container {
+    background-color: white;
+    border: 1px;
+    border-color: #003CA6;
+}
+
+.logoEntidades{
+  
+  /*display: table-cell;
+  vertical-align: middle;*/
+}
+
+#imageFlota {
+    opacity: 0.4;
+}
+
+#imageFlotaFigcaption {
+    text-align: center;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 38px;
+}
+
+h3 {
+    position: absolute;
+    text-align: justify;
+    font-family: 'Didact Gothic', sans-serif;
+    top: 190px;
+    width: 90%;
+}
+
+h3 span {
+    color: black;
+    letter-spacing: -1px;
+    font-size: 24px;
+}
+
+#modalEmail {
+    display: inline-block;
+    position: top;
+}
+
+#tituloModal {
+    text-align: center;
+}
+
+.filePicker{
+    text-align: center;
+    color: black;
+    background-color: #51ffd6; 
+    background: #51ffd6;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+#textoFlota {
+    color: black;
+    letter-spacing: -1px;
+    font-size: 40px;
+}
+
+#textoServicios {
+    color: black;
+    letter-spacing: -1px;
+    font-size: 28px;
+}
+
+#formulario {
+    border-style: solid;
+    border-color: #003CA6;
+    border-radius: 1px;
+    padding: 10px;
+    /*background-image: url("fondoFormulario.jpg");*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#campoTexto {
+    border: 1px solid black;
+}
+
+#botonEnviar {
+    border: 1px outset black;
+}
+
+.button {
+    color: black;
+    background-color: 9690D4;
+    font-weight: bold;
+}
+
+.button:hover {
+    color: white;
+    background-color: #003CA6;
+    font-weight: bold;
+}
+
+label {
+    color: black;
+    font-weight: bold;
+}
+
+p {
+    color: black;
+    font-weight: bold;
+}
+
+#Llamar, #E-mail, #Whatsapp {
+    background-image: url("fondo6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}

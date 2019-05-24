@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Enviar Notificacion de Pagos a Proveedores y Contratistas.</title>
+        <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/app.css' %}">
+        <link rel="stylesheet" href="{% static 'css/foundation-flex.css' %}">
+        <link rel="stylesheet" href="{% static 'icons/foundation-icons.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'slick/slick.css' %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css' %}"/>
+        <link rel="shortcut icon" href="{% static 'icons/favicon.ico' %}"/>
+    </head>
+    <body>
+        <section id="social-container">
+            <div class="row align-right text-center">
+                <div class="column small-3 medium-1" data-open="ubicacion">
+                    <a href="#">
+                        <img src="{% static 'icons/SoporteTecnico.png' %}" alt="Soporte Tecnico" title="Soporte Tecnico">
+                    </a>
+                </div>
+                <div class="column small-3 medium-1" data-open="ubicacion">
+                    <a href="#">
+                        <img src="{% static 'icons/WriteDeveloper.png' %}" alt="Developer" title="Developer">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="logo-container">  
+            <div class="row align-right text-center">
+                <div class="column">
+                    <img id="img-logo" src="{% static 'img/ASTIVIK-SHIPYARD.jpg' %}">
+                </div>
+            </div>
+        </section>
+        
+        <section class="menu-container">
+            <!-- Menu Tabs -->
+            <ul class="tabs text-center" data-tabs id="menu-tabs">
+                <li class="tabs-title is-active"><a href="#panelEnvio" aria-selected="true">Envio Notificacion</a></li>
+                <li class="tabs-title"><a href="#panelProveedor">Proveedores</a></li>
+            </ul>
+            <!-- Fin Menu Tabs -->
+      
+            <!-- Contenido Tabs -->
+            <div class="tabs-content" data-tabs-content="menu-tabs">
+                <div class="tabs-panel is-active" id="panelEnvio">
+                    
+                        <div class="row align-center">
+                            <div class="medium-6 columns">
+                                AACION REALIZADA
+                            </div>
+                        </div>
+                        <div class="row align-center">
+                            <button type="submit" class="button" id="botonCotizar">Enviar  Notificaciones</button>
+                        </div>
+                    
+                </div>
+                
+                <div class="tabs-panel" id="panelProveedor">
+                    <form id="formulario">
+                        <div class="row align-center">
+                            <div class="medium-6 columns">
+                                <label>Nombre Completo
+                                    <input type="text" id="campoTexto" placeholder="Escriba su nombre y apellidos.">
+                                </label>
+                                <label for="exampleFileUpload" class="button">Upload File
+                                    <input type="file" id="exampleFileUpload" class="show-for-sr">
+                                </label>
+                                <label for="id_docfile" class="button">Selecciona archivo .CSV para enviar notificacion de pago a los proveedores:</label>
+                                <input type="file" name="docfile" required id="id_docfile">
+                                
+                            </div>
+                        </div>
+                        <div class="row align-center">
+                            <button type="submit" class="button" id="botonCotizar">E n v i a r</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Fin Contenido Tabs -->
+        </section>
+        
+        <script src="{% static 'js/vendor/jquery.js' %}"></script>
+        <script src="{% static 'js/vendor/what-input.js' %}"></script>
+        <script src="{% static 'js/vendor/foundation.js' %}"></script>
+        <script src="{% static 'js/app.js' %}"></script>    
+    
+    </body>
+</html>

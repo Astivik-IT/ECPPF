@@ -1,0 +1,120 @@
+<!doctype html>
+
+{% load static %}
+<html class="no-js" lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Envio Notificacion de Pagos a Proveedores y Contratistas.</title>
+        <link rel="stylesheet" href="{% static 'icons/foundation-icons.css' %}">
+        <link rel="stylesheet" href="{% static 'css/foundation-flex.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'css/app.css' %}">
+        <link rel="stylesheet" type="{% static 'text/css" href="slick/slick.css' %}"/>
+        <link rel="stylesheet" type="{% static 'text/css" href="slick/slick-theme.css' %}"/>
+        <link rel="shortcut icon" href="{% static 'icons/favicon.ico' %}"/>
+    </head>
+    <body>
+        <!--// soporte y copyright-->
+        <section id="soporte-container">
+            <div class="row align-right text-center">
+                <div class="column small-3 medium-1" data-open="Support">
+                    <a href="#">
+                        <img src="{% static 'icons/SoporteTecnico.png' %}" alt="Soporte Tecnico" title="Soporte Tecnico">
+                    </a>
+                </div>
+                <div class="column small-3 medium-1" data-open="Dev">
+                    <a href="#">
+                        <img src="{% static 'icons/WriteDeveloper.png' %}" alt="Developer" title="Developer">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--// fin ssoporte-->
+
+        <!--// logo-->
+        <section id="logo-container">  
+            <div class="row align-right text-center">
+                <div class="column">
+                    <img id="img-logo" src="{% static 'img/ASTIVIK-SHIPYARD.jpg' %}">
+                </div>
+            </div>
+        </section>
+        <!--// fin logo-->
+
+        <!--// Menu-->
+        <section class="menu-container">
+            <!-- Menu Tabs -->
+            <ul class="tabs text-center show-for-medium" data-tabs id="menu-tabs">
+                <li class="tabs-title is-active"><a href="#panelEnvio" aria-selected="true">Notificacion</a></li>
+                <li class="tabs-title"><a href="#panelProveedor">Proveedor</a></li>
+            </ul>
+            <!-- Fin Menu Tabs -->
+      
+            <!-- Contenido Tabs -->
+            <div class="tabs-content" data-tabs-content="menu-tabs">
+                <div class="tabs-panel" id="panelEnvio">
+                    <form id="formulario" action="" method="post">
+                        
+                    </form>
+                </div>
+                <div class="tabs-panel is-active" id="panelProveedor">
+                    <form id="formulario">
+                        {% csrf_token %}
+                        <br>
+                        <div class="row">
+                            <div class="medium-6 columns" style="background: #51e2ff; font-weight: bold; border: 1px outset black; text-align: center; padding: 15px " id="filePicker">
+                                    <p>Mantener Proveedores</p>
+                                    {{ form.as_p }}
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div class="row align-center">
+                            <button type="submit" class="button" id="botonEnviar">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Fin Contenido Tabs -->
+        </section>
+        <!--// fin menu-->
+
+        <!--// Ventana Modal Interna Emergente -->
+        <div class="reveal" id="Support" data-reveal>
+            <div id="tituloModal">
+                <h1>Soporte Tecnico</h1>
+                <h2>Depto Sistemas Astivik</h2>
+            </div>
+            <p></br><b>Contacto: </b></br> Tel: 66 85 018 Ext 1207 - Email: sistemas@astivik.com.co</p>
+            <p></br>Horario de atencion: </br> Lunes a Viernes 7:00 AM a 5:00 PM. </br> Sabados: 9:00 AM a 12:00 M.</p>
+            <p></br>Cartagena de Indias D. T. y C.</br> Bolivar - Colombia.</p>
+             <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="reveal" id="Dev" data-reveal>
+            <div id="tituloModal">
+                <h1>Desarrollado Por :</h1>
+                <h2>Leonardo Romero Acuña</h2>
+                <h2>Ingeniero Sistemas</h2>
+            </div>
+            <p></br><b>Contacto: </b></br> Cel: 312 66 66 056 - Email: leromac@hotmail.com</p>
+            <p></br><b>Aplicacion desarrollada en: </b></br> Django Framework version 2.1.2.</br> Lenguaje Programacion Python version 3.7.</br> Base Datos PostgreSql version 9.6.</br>Web Framework Foundation version 5.</p>
+            <p></br>Cartagena de Indias D. T. y C.</br> Bolivar - Colombia.</p>
+             <button class="close-button" data-close aria-label="Close modal" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <!--// Fin Ventana Modal -->
+
+        <script src="{% static 'js/vendor/jquery.js' %}"></script>
+        <script src="{% static 'js/vendor/what-input.js' %}"></script>
+        <script src="{% static 'js/vendor/foundation.js' %}"></script>
+        <script src="{% static 'js/app.js' %}"></script>
+    </body>
+</html>
